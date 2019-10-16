@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 a {
+    font-family: 'Heebo', sans-serif;
     color: #333;
     text-decoration: none;
 }
@@ -13,6 +14,24 @@ h1 {
     margin: 10% 15% 0%;
     width: max-content;
 }
+.works a {
+    font-family:'Poppins', sans-serif;
+    opacity: 0.6;
+    font-size: 13px;
+    display: block;
+    width: 100px;
+    padding: 45px 10px;
+    margin: 30px auto;
+    background: #fff;
+    text-align: center;
+    transition: all .2s ease;
+}
+.works a:hover {
+    opacity: 1;
+    transition: all .2s ease;
+    width: 105px; 
+}
+
 .main__content {
     display: flex;
     height: 100vh;
@@ -35,12 +54,21 @@ h1 {
     font-weight: 400;
     font-size: 60px;
     width: max-content;
-    transform: rotate(90deg) translateY(75%) translateX(70%);
+    transform: rotate(90deg) translateY(0%) translateX(-40%);
 }
 .name {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 90px;
     margin: 0 40%;
+    transform: translateY(-100%);
     color:rgb(255,82,82);
+}
+.text__small {
+    font-family: 'Poppins', sans-serif;
+    color: #afafaf;
+    font-size: 16px;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
 }
