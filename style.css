@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: #000;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 :root {
     --mouseX: 0;
@@ -21,14 +22,7 @@ body {
     height: 0vh;
     position: relative;
 }
-.grid div:first-of-type {
-    margin-left: 23%;
-    -webkit-transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -o-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    transition-delay: 1s;
-}
+
 .grid div {
     -webkit-transition: -webkit-transform 2s cubic-bezier(0.1, 0, 0.115, 0.995);
     transition: -webkit-transform 2s cubic-bezier(0.1, 0, 0.115, 0.995);
@@ -51,7 +45,15 @@ body {
     left: 0;
     width: 1px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ddd;
+}
+.grid div:first-of-type {
+    margin-left: 12%;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
 }
 .grid div:nth-of-type(2) {
     -webkit-transition-delay: 1.2s;
@@ -59,7 +61,7 @@ body {
     -o-transition-delay: 1.2s;
     -ms-transition-delay: 1.2s;
     transition-delay: 1.2s;
-    margin-left: 33%;
+    margin-left: 30%;
 }
 .grid div:nth-of-type(3) {
     -webkit-transition-delay: 1.4s;
@@ -67,7 +69,7 @@ body {
     -o-transition-delay: 1.4s;
     -ms-transition-delay: 1.4s;
     transition-delay: 1.4s;
-    margin-left: 60%;
+    margin-left: 49%;
 }
 .grid div:nth-of-type(4) {
     -webkit-transition-delay: 1.4s;
@@ -75,7 +77,15 @@ body {
     -o-transition-delay: 1.4s;
     -ms-transition-delay: 1.4s;
     transition-delay: 1.4s;
-    margin-left: 85%;
+    margin-left: 67%;
+}
+.grid div:nth-of-type(5) {
+    -webkit-transition-delay: 1.4s;
+    -moz-transition-delay: 1.4s;
+    -o-transition-delay: 1.4s;
+    -ms-transition-delay: 1.4s;
+    transition-delay: 1.4s;
+    margin-left: 86%;
 }
 .grid-overlay {
     width: 100vw;
@@ -169,13 +179,7 @@ body {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    border: 4px solid #fff;
+    border: 4px solid rgba(0, 0, 0, 0.7);
     filter: saturate(50%);
-    box-shadow: 0 0 1rem #fff;
-}
-a {
-    font-family: 'Heebo', sans-serif;
-}
-.works a {
-    font-family:'Poppins', sans-serif;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
 }
