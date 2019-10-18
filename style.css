@@ -8,6 +8,16 @@ body {
     --mouseX: 0;
     --mouseY: 0;
 }
+
+.main__content {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
 #loadOverlay {
     width: 100vw;
     height: 100vh;
@@ -98,7 +108,7 @@ body {
 .grid-wrap {
     position: fixed;
     pointer-events: none;
-    z-index: 9000;
+    z-index: 1;
     top: 0;
     left: 60px;
     bottom: 0;
@@ -170,8 +180,8 @@ body {
     z-index: 9500;
     background-color: #fff;
 }
-.cursor__highlight {
-    z-index: 2;
+/*.cursor__highlight {
+    z-index: 3;
     position: fixed;
     left: var(--mouseX);
     top: var(--mouseY);
@@ -182,4 +192,11 @@ body {
     border: 4px solid rgba(0, 0, 0, 0.7);
     filter: saturate(50%);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    transition: all .3s;
+}*/
+
+.skills {
+    height: 100vh;
+    width: 50%;
+    margin: auto;
 }
