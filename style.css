@@ -159,7 +159,27 @@ h2 {
 .grid-4{
     margin-left: 50%;
 }
-
+#contacts{
+    background: #000;
+    position: relative;
+}
+#contacts>* {
+    color: #fefefe;
+}
+.big_text {
+    font-size: 150px;
+    font-weight: 700;
+}
+.info {
+    left: 0;
+    right: 0;
+    top: 43vh;
+    position: absolute;
+    width: 60%;
+    height: 42vh;
+    margin: auto;
+    background: rgba(365,365,365,0.12);
+}
 /*.cursor__highlight {
     z-index: 3;
     position: fixed;
@@ -179,4 +199,37 @@ h2 {
     height: 100vh;
     width: 50%;
     margin: auto;
+}
+
+.in_touch {
+    position: absolute;
+    display: block;
+    padding-top: 5vh;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+}
+.social a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.social a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+.social {
+    position: absolute;
+    bottom: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
+}
+.info span {
+    display: block;
+    margin: 10% auto;
+    width: fit-content;
 }
