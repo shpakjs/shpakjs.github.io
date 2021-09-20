@@ -165,3 +165,8 @@ var skillsArray = [
 
     
     
+  const pushToDataLayer = () => {
+    window.dataLayer = window.dataLayer || [];  
+    dataLayer.push({'merchantType': 'omnichannel'});
+    console.log('dataLayer', window.dataLayer);
+  }
