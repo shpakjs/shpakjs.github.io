@@ -3,7 +3,7 @@
     <script>
         dataLayer = [{
             'merchantType': 'omnichannel',
-            'user_id': (Math.random() + 1).toString(36).substring(7)
+            'user_id': Math.floor(Math.random() * 5).toString()
         }];
         console.log(window.dataLayer);
     </script>
