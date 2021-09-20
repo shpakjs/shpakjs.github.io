@@ -170,3 +170,7 @@ var skillsArray = [
     dataLayer.push({'merchantType': 'omnichannel'});
     console.log('dataLayer', window.dataLayer);
   }
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
