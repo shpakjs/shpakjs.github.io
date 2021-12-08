@@ -167,7 +167,10 @@ var skillsArray = [
     
   const pushToDataLayer = () => {
     window.dataLayer = window.dataLayer || [];  
-    dataLayer.push({'merchantType': 'omnichannel', 'user_id': '10'});
+    window.dataLayer.push({ event: 'test_event'});
+    setTimeout(() => {
+      window.dataLayer.push({'merchantType': 'omnichannel', 'user_id': '10'});
+    }, 5000);
   }
 
   function getRandomInt(max) {
